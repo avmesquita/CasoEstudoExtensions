@@ -1,0 +1,45 @@
+﻿@using CasoDeEstudoExtensionSIR.Helpers;
+
+ <div class="modal fade" id="modalContent" tabindex="-1" role="dialog" aria-labelledby="modalContent" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Extension into Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-lg-6">
+                                @Html.Label("Codigo Postal")
+                                @Html.TextBoxSIR("CodigoPostal", "", "", new { @class = "form-control" }, SIRDatatype.CodigoPostal)
+
+                                @Html.Label("Telemovel")
+                                @Html.TextBoxSIR("Telemovel", "", "", new { @class = "form-control" }, SIRDatatype.Telemovel)
+
+                                @Html.Label("Default")
+                                @Html.TextBoxSIR("Default", "", "", new { @class = "form-control" })
+                            </div>
+                            <div class="col-lg-6">
+                                @Html.Label("NICP")
+                                @Html.TextBoxSIR("NICP", "", "", new { @class = "form-control" }, SIRDatatype.NICP)
+
+                                @Html.Label("NIC")
+                                @Html.TextBoxSIR("NIC", "", "", new { @class = "form-control" }, SIRDatatype.NIC)
+
+                                @Html.Label("CIN")
+                                @Html.TextBoxSIR("CIN", "", "", new { @class = "form-control" }, SIRDatatype.CIN)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
