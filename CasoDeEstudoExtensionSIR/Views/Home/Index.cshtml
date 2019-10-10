@@ -1,0 +1,68 @@
+﻿@using CasoDeEstudoExtensionSIR.Helpers;
+
+<div class="jumbotron">
+    <h1>Casos de Estudo</h1>
+</div>
+<div class="col-lg-12">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-6">
+                @Html.Label("Codigo Postal")
+                @Html.TextBoxSIR("CodigoPostal", "", "", new { @class = "form-control" }, SIRDatatype.CodigoPostal)
+
+                @Html.Label("Telemovel")
+                @Html.TextBoxSIR("Telemovel", "", "", new { @class = "form-control" }, SIRDatatype.Telemovel)
+
+                @Html.Label("Default")
+                @Html.TextBoxSIR("Default", "", "", new { @class = "form-control" })
+            </div>
+            <div class="col-lg-6">
+                @Html.Label("NICP")
+                @Html.TextBoxSIR("NICP", "", "", new { @class = "form-control" }, SIRDatatype.NICP)
+
+                @Html.Label("NIC")
+                @Html.TextBoxSIR("NIC", "", "", new { @class = "form-control" }, SIRDatatype.NIC)
+
+                @Html.Label("CIN")
+                @Html.TextBoxSIR("CIN", "", "", new { @class = "form-control" }, SIRDatatype.CIN)
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-12">
+    <div class="row">
+        <hr style="padding-top:30px;padding-bottom:30px;" />
+    </div>
+</div>
+<div class="col-lg-12">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-6">
+                <div class="col-lg-3">
+                    @Html.Label("Codigo Postal")
+                    @Html.TextBoxSIR("CodigoPostal", "", "", new { @class = "form-control" }, SIRDatatype.CodigoPostal)
+
+                    @Html.Label("Telemovel")
+                    @Html.TextBoxSIR("Telemovel", "", "", new { @class = "form-control" }, SIRDatatype.Telemovel)
+                </div>
+                <div class="col-lg-3">
+                    @Html.Label("Default")
+                    @Html.TextBoxSIR("Default", "", "", new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="col-lg-3">
+                    @Html.Label("NICP")
+                    @Html.TextBoxSIR("NICP", "", "", new { @class = "form-control" }, SIRDatatype.NICP)
+
+                    @Html.Label("NIC")
+                    @Html.TextBoxSIR("NIC", "", "", new { @class = "form-control" }, SIRDatatype.NIC)
+                </div>
+                <div class="col-lg-3">
+                    @Html.Label("CIN")
+                    @Html.TextBoxSIR("CIN", "", "", new { @class = "form-control" }, SIRDatatype.CIN)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
