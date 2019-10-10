@@ -5,6 +5,13 @@ using System.Web;
 
 namespace CasoDeEstudoExtensionSIR.Helpers
 {
+    public class SIRFieldType
+    {
+        public string name;
+        public string size;
+        public string unit;
+    }
+
     public sealed class SIRFieldTypeHelper
     {
         private static SIRFieldTypeHelper instance = null;

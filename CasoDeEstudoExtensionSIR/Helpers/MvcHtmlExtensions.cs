@@ -10,13 +10,6 @@ using System.Web.Routing;
 
 namespace CasoDeEstudoExtensionSIR.Helpers
 {
-    public class SIRFieldType
-    {
-        public string name;
-        public string size;
-        public string unit;
-    }
-
     public enum SIRDatatype 
     { 
         Default,
