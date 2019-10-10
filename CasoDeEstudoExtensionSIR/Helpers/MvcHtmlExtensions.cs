@@ -10,7 +10,7 @@ using System.Web.Routing;
 
 namespace CasoDeEstudoExtensionSIR.Helpers
 {
-    public struct FieldTypeSIR
+    public class SIRFieldType
     {
         public string name;
         public string size;
@@ -27,7 +27,6 @@ namespace CasoDeEstudoExtensionSIR.Helpers
         CIN
     }
 
-
     public static class MvcHtmlExtensions
     {
         public static MvcHtmlString TextBoxSIRFor<TModel, TValue>(this HtmlHelper<TModel> htmlHelper,
@@ -37,17 +36,20 @@ namespace CasoDeEstudoExtensionSIR.Helpers
 
             switch (sirdt)
             {
-                case SIRDatatype.CodigoPostal: 
-                    routeValues.Add("style", "max-width:8em;");
+                case SIRDatatype.CodigoPostal:
+                    routeValues.Add("style", "max-width:25%;");
                     break;
                 case SIRDatatype.Telemovel:
                     routeValues.Add("style", "max-width:9em;");
                     break;
                 case SIRDatatype.NICP:
-                    routeValues.Add("style", "max-width:9em;");
+                    routeValues.Add("style", "max-width:10em;");
                     break;
                 case SIRDatatype.NIC:
-                    routeValues.Add("style", "max-width:9em;");
+                    routeValues.Add("style", "max-width:75%;");
+                    break;
+                case SIRDatatype.CIN:
+                    routeValues.Add("style", "max-width:70px;");
                     break;
             }
 
